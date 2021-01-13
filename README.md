@@ -3,7 +3,7 @@
 This repo contains C++ implementations of common algorithms and data structures, grouped by topics. The list will be sporadically updated.
 
 ## Data structures:
-- [Binary min-heap][binary_heap]
+- [Binary heap][binary_heap]
 - [Huffman tree][Huffman_Tree]
 - [Trie][trie]
 - [Union-Find][union_find]
