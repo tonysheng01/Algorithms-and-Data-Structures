@@ -5,7 +5,7 @@ This repo contains C++ implementations of common algorithms and data structures,
 ## Data structures:
 - [Binary heap][binary_heap]
 - [Huffman tree][Huffman_Tree]
-- [Trie][trie]
+- [Trie (Prefix tree)][trie]
 - [Union-Find][union_find]
 
 ## Algorithms:
@@ -29,7 +29,7 @@ This repo contains C++ implementations of common algorithms and data structures,
 - [Knuth-Morris-Pratt Algorithm][KMP]
 - [Aho-Corasick Algorithm][Aho-Corasick]
 
-### Others
+### Miscellaneous
 - [Binary search][divide_and_conquer]
 - [Merge sort and counting inversions][divide_and_conquer]
 - [Finding closest pair of points in a 2D plane][divide_and_conquer]
