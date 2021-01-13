@@ -2,7 +2,7 @@
 
 This repo contains C++ implementations of common algorithms and data structures, grouped by topics. The list will be sporadically updated.
 
-## Data structures:
+## Data Structures:
 - [Binary heap][binary_heap]
 - [Huffman tree][Huffman_Tree]
 - [Trie (Prefix tree)][trie]
@@ -25,14 +25,16 @@ This repo contains C++ implementations of common algorithms and data structures,
 - [Dijkstra's shortest path algorithm][directed_graph]
 - [Tarjan's offline lowest common ancestor algorithm for trees][directed_graph]
 
-### Pattern matching
+### Pattern Matching
 - [Knuth-Morris-Pratt Algorithm][KMP]
 - [Aho-Corasick Algorithm][Aho-Corasick]
 
-### Miscellaneous
+### Divide and Conquer
 - [Binary search][divide_and_conquer]
 - [Merge sort and counting inversions][divide_and_conquer]
 - [Finding closest pair of points in a 2D plane][divide_and_conquer]
+
+### Miscellaneous
 - [A selection of greedy algorithms, focusing on interval scheduling and optimal caching][greedy]
 - [Gale-Shapley stable matching algorithm][Gale-Shapley]
 
