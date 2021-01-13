@@ -22,7 +22,7 @@ This repo contains C++ implementations of common algorithms and data structures,
 > Directed Graphs
 - Topological sorting
 - Strongly connected components: Kosaraju's Algorithm and Tarjan's Algorithm
-- Dijkstra's Algorithm
+- Dijkstra's shortest path algorithm
 - Tarjan's offline lowest common ancestor algorithm for trees
 
 ### Pattern matching
