@@ -252,46 +252,6 @@ vector<int> shortestDistance(weighted_graph g, int source) {
 // ----------------------------------------------------------------------------------------------------------
 
 
-// 4. DIJKSTRA'S ALGORITHM FOR SHORTEST PATHS FROM A POINT --------------------------------------------------
-
-// Given a directed or undirected graph g with non-negative edge weights and a source node, returns a vector
-//  whose i-th index holds the shortest distance from the source to the i-th node.
-// Runs in O(mlogn) time
-
-vector<int> shortestDistance(weighted_graph g, int source) {
-    vector<int> explored(g.size());
-    vector<int> shortestDistance(g.size(), -1);
-    // pi.second is a node i and p.first is the shortest distance from source to i based on current explored set
-    // pq may contain duplicate nodes but will be properly dealt with in the main loop
-    priority_queue<pi,vector<pi>,greater<pi>> pq;
-    shortestDistance[source] = 0;
-    pq.push(make_pair(0, source));
-    int cur;
-    
-    // In each iteration, extract the unexplored node with smallest distance from source, add it to the explored
-    //  set and push its still unexplored children for consideration
-    while (!pq.empty()) {
-        cur = pq.top().second;
-        pq.pop();
-        if (explored[cur]) {
-            continue;
-        }
-        for (pi p : g[cur]) {
-            if (shortestDistance[p.first] == -1 || shortestDistance[cur] + p.second < shortestDistance[p.first]) {
-                // Update shortest distance based on current explored set
-                shortestDistance[p.first] = shortestDistance[cur] + p.second;
-                pq.push(make_pair(shortestDistance[p.first], p.first));
-            }
-        }
-        explored[cur] = 1;
-    }
-    
-    return shortestDistance;
-}
-
-// ----------------------------------------------------------------------------------------------------------
-
-
 // 5. TARJAN'S OFF-LINE LOWEST COMMON ANCESTOR ALGORITHM FOR TREES ------------------------------------------
 
 // Provided a tree of N nodes and a series of Q node pairs, find the LCA of each given pair of nodes.
