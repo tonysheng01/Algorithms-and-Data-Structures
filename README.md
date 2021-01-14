@@ -24,7 +24,7 @@ This repo contains C++ implementations of common algorithms and data structures,
 - [Topological sorting][directed_graph]
 - [Strongly connected components: Kosaraju's Algorithm and Tarjan's Algorithm][directed_graph]
 - [Shortest paths: Dijkstra's Algorithm][directed_graph]
-- [(Trees) Lowest common ancestor: Tarjan's Offline Algorithm][directed_graph]
+- [(Trees) Lowest common ancestor: Tarjan's Offline Algorithm][union_find]
 
 ### Pattern Searching
 - [Single-pattern searching: Knuth-Morris-Pratt Algorithm][KMP]
