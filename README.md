@@ -4,9 +4,9 @@ This repo contains C++ implementations of common algorithms and data structures,
 
 ## Data Structures:
 - [Binary heap][binary_heap]
-- [Huffman tree][Huffman_Tree]
+- [Huffman Tree][Huffman_Tree]
 - [Trie (Prefix tree)][trie]
-- [Union-Find][union_find]
+- [Union-find][union_find]
 
 ## Algorithms:
 ### Graphs
@@ -15,28 +15,29 @@ This repo contains C++ implementations of common algorithms and data structures,
 > Undirected Graphs
 - [Bipartiteness testing][undirected_graph]
 - [Connected components][undirected_graph]
-- [Tarjan's Algorithm for finding articulation points / bridges][undirected_graph]
-- [Minimum spanning trees: Prim's Algorithm and Kruskal's Algorithm][undirected_graph]
-- [Maximum spacing k-clustering][undirected_graph]
+- [Articulation points and bridges: Tarjan's Algorithm][undirected_graph]
+- [Minimum spanning trees: Prim's Algorithm][undirected_graph]
+- [Minimum spanning trees: Kruskal's Algorithm][union_find]
+- [Maximum spacing k-clustering][union_find]
 
 > Directed Graphs
 - [Topological sorting][directed_graph]
 - [Strongly connected components: Kosaraju's Algorithm and Tarjan's Algorithm][directed_graph]
-- [Dijkstra's shortest path algorithm][directed_graph]
-- [Tarjan's offline lowest common ancestor algorithm for trees][directed_graph]
+- [Shortest paths: Dijkstra's Algorithm][directed_graph]
+- [(Trees) Lowest common ancestor: Tarjan's Offline Algorithm][directed_graph]
 
-### Pattern Matching
-- [Knuth-Morris-Pratt Algorithm][KMP]
-- [Aho-Corasick Algorithm][Aho-Corasick]
+### Pattern Searching
+- [Single-pattern searching: Knuth-Morris-Pratt Algorithm][KMP]
+- [Multi-pattern searching: Aho-Corasick Algorithm][Aho-Corasick]
 
 ### Divide and Conquer
 - [Binary search][divide_and_conquer]
 - [Merge sort and counting inversions][divide_and_conquer]
-- [Finding closest pair of points in a 2D plane][divide_and_conquer]
+- [Closest pair of points in a 2D plane][divide_and_conquer]
 
 ### Miscellaneous
 - [A selection of greedy algorithms, focusing on interval scheduling and optimal caching][greedy]
-- [Gale-Shapley stable matching algorithm][Gale-Shapley]
+- [Stable matching: Gale-Shapley Algorithm][Gale-Shapley]
 
 [Aho-Corasick]: /Aho-Corasick.cpp
 [Gale-Shapley]: /Gale-Shapley.cpp
