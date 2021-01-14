@@ -260,46 +260,7 @@ vector<int> shortestDistance(weighted_graph g, int source) {
 // Prints the LCA of each pair in queries
 // The tree is represented by adjacency lists of directed, hierarchal edges. Each node has an edge to its
 //  children but not to its parent
-void getLCA(tree t, int root, vector<pi> queries) {
-    // Two copies of each query is saved.
-    vector<vector<int>> req(t.size());
-    for (pi q : queries) {
-        req[q.first].push_back(q.second);
-        req[q.second].push_back(q.first);
-    }
-    
-    // Post-order DFS
-    // Idea: the LCA of two nodes belonging to different subtrees rooted at u (including u itself) must be u
-    stack<int> s;
-    UnionFind uf = makeUF((int)t.size());
-    vector<int> explored(t.size()); // 0: unexplored. 1: children pushed to stack. 2: all children explored.
-    vector<int> par(t.size(), root); // Records the parent of each node. Let the root's parent be itself
-    vector<int> anc(t.size()); // Current ancestor
-    s.push(root);
-    int cur;
-    while (!s.empty()) {
-        cur = s.top();
-        if (explored[cur] == 0) {
-            for (int child : t[cur]) {
-                s.push(child);
-                par[child] = cur;
-            }
-            explored[cur]++;
-        } else {
-        // Since trees contain no cycles, each node will only be pushed once. Thus, the case where cur has
-        //  already been popped (explored[cur] == 2) need not be considered.
-            for (int target : req[cur]) {
-                // Answer each query the second time it is encountered
-                if (explored[target] == 2) {
-                    cout << "LCA of " << cur << " and " << target << " is " << anc[Find(uf, target)] << endl;
-                }
-            }
-            Union(uf, par[cur], cur); // Merging up
-            anc[Find(uf, cur)] = par[cur]; // Common ancestor moves up one layer
-            explored[cur]++;
-            s.pop();
-        }
-    }
-}
+
+// Refer to the union-find template for implementation.
 
 // ----------------------------------------------------------------------------------------------------------
