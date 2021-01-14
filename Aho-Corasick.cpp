@@ -1,5 +1,5 @@
 // The Aho-Corasick Algorithm for multi-pattern matching
-// Output sensitive. Linear time complexity with respect to both input and output
+// Output sensitive. O(max(input, output)) time complexity
 
 #include <vector>
 #include <queue>
