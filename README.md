@@ -36,7 +36,7 @@ This repo contains C++ implementations of common algorithms and data structures,
 - [Closest pair of points in a 2D plane][divide_and_conquer]
 
 ### Miscellaneous
-- [A selection of greedy algorithms, focusing on interval scheduling and optimal caching][greedy]
+- [A selection of greedy algorithms focused on interval scheduling and optimal caching][greedy]
 - [Stable matching: Gale-Shapley Algorithm][Gale-Shapley]
 
 [Aho-Corasick]: /Aho-Corasick.cpp
